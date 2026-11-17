@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BIENVENIDA: nombre, avatar e interés -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Encabezado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_welcome_header"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="40dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="56dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_emoji"
+                android:textSize="64sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/welcome_subtitle"
+                android:textColor="@color/toolbar_subtitle"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- Formulario -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Material3.CardView.Elevated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-32dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvCardTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_card_title"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilName"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/welcome_name_hint"
+                    app:startIconDrawable="@drawable/ic_person">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName|textCapWords"
+                        android:maxLength="30" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Avatar -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/welcome_avatar_title"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:checkedChip="@id/chipAvatar1"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAvatar1"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="😎"
+                        android:textSize="20sp"
+                        app:checkedIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAvatar2"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🤠"
+                        android:textSize="20sp"
+                        app:checkedIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAvatar3"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🧗"
+                        android:textSize="20sp"
+                        app:checkedIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAvatar4"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏕️"
+                        android:textSize="20sp"
+                        app:checkedIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAvatar5"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🦜"
+                        android:textSize="20sp"
+                        app:checkedIconVisible="false" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAvatar6"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🐢"
+                        android:textSize="20sp"
+                        app:checkedIconVisible="false" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <!-- Interés -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/welcome_interest_title"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupInterest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:checkedChip="@id/chipAll"
+                    app:selectionRequired="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_all" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAdventure"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_adventure" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipCulture"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_culture" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipNature"
+                        style="@style/Widget.Material3.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_nature" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/welcome_button"
+                    android:textSize="16sp"
+                    app:cornerRadius="16dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="@string/welcome_footer"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

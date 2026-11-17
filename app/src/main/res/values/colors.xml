@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta inspirada en el Desierto de la Tatacoa (modo claro) -->
+    <color name="brand_primary">#B4531F</color>
+    <color name="brand_primary_dark">#8E3E12</color>
+    <color name="brand_primary_container">#FFDBC9</color>
+    <color name="brand_on_primary_container">#3A1300</color>
+    <color name="brand_secondary">#2E6B4F</color>
+    <color name="brand_secondary_container">#C8EBD6</color>
+    <color name="brand_on_secondary_container">#0B2E1F</color>
+    <color name="brand_background">#FFF8F4</color>
+    <color name="brand_surface">#FFFFFF</color>
+    <color name="surface_container_lowest">#FFFFFF</color>
+    <color name="surface_container_low">#FFF4EE</color>
+    <color name="surface_container">#FBEDE6</color>
+    <color name="surface_container_high">#F5E6DE</color>
+    <color name="surface_container_highest">#EFE0D8</color>
+    <color name="text_primary">#2B1D16</color>
+    <color name="text_secondary">#6F5D53</color>
+    <color name="tip_background">#FFF1D6</color>
+    <color name="divider">#E8D8CF</color>
+    <color name="toolbar_subtitle">#FFDBC9</color>
+
+    <!-- Colores que no cambian con el tema -->
+    <color name="star">#F4B400</color>
+    <color name="visited">#2E7D4F</color>
+    <color name="white">#FFFFFF</color>
+    <color name="cat_adventure">#1E6FA8</color>
+    <color name="cat_culture">#9A5B16</color>
+    <color name="cat_nature">#2E7D4F</color>
+    <color name="ic_launcher_background">#B4531F</color>
+</resources>

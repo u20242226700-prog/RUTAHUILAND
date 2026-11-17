@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_add_white"
+        android:title="@string/action_add_place"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort_white"
+        android:title="@string/sort_title"
+        app:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/sort_name"
+                    android:checked="true"
+                    android:title="@string/sort_name" />
+                <item
+                    android:id="@+id/sort_distance"
+                    android:title="@string/sort_distance" />
+                <item
+                    android:id="@+id/sort_near"
+                    android:title="@string/sort_near" />
+                <item
+                    android:id="@+id/sort_rating"
+                    android:title="@string/sort_rating" />
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Sol -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M68,40m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0" />
+    <!-- Montañas -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M26,76L45,46L56,62L64,52L82,76Z" />
+    <!-- Camino -->
+    <path
+        android:fillColor="#FFDBC9"
+        android:pathData="M50,76L56,64L60,64L58,76Z" />
+</vector>

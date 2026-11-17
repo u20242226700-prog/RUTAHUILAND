@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Traducción al inglés. Android la usa sola cuando el celular está en inglés. -->
+<resources>
+    <string name="app_name">RutaHuila</string>
+
+    <!-- Filters / categories -->
+    <string name="filter_all">All</string>
+    <string name="filter_adventure">Adventure</string>
+    <string name="filter_culture">Culture</string>
+    <string name="filter_nature">Nature</string>
+
+    <!-- Welcome -->
+    <string name="welcome_emoji">🌄</string>
+    <string name="welcome_subtitle">Discover, plan and enjoy the best places in Huila</string>
+    <string name="welcome_card_title">Before we start…</string>
+    <string name="welcome_back_title">Good to see you again, %1$s!</string>
+    <string name="welcome_name_hint">What\'s your name?</string>
+    <string name="welcome_name_error">Enter your name (at least 2 letters)</string>
+    <string name="welcome_avatar_title">Choose your avatar</string>
+    <string name="welcome_interest_title">What kind of trip do you like?</string>
+    <string name="welcome_button">Start exploring</string>
+    <string name="welcome_button_continue">Continue</string>
+    <string name="welcome_footer">Mobile Device Programming · USCO</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_explore">Explore</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_trip">My route</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Explore -->
+    <string name="explore_title">Explore Huila</string>
+    <string name="explore_greeting">%1$s Hi, %2$s! Where are we going today?</string>
+    <string name="explore_search_hint">Search place or town</string>
+    <string name="explore_empty">No places match that filter 😕\nTry another search or category.</string>
+    <string name="explore_surprise">Surprise me</string>
+    <string name="sort_title">Sort</string>
+    <string name="sort_name">By name (A-Z)</string>
+    <string name="sort_distance">Closest to Neiva</string>
+    <string name="sort_rating">My top rated</string>
+    <plurals name="places_count">
+        <item quantity="one">%d place found</item>
+        <item quantity="other">%d places found</item>
+    </plurals>
+
+    <!-- Place card -->
+    <string name="place_location_format">%1$s · %2$d km from Neiva</string>
+    <string name="place_location_city">%1$s · in the city</string>
+    <string name="place_rating_format">★ %1$.1f</string>
+    <string name="place_visited">✓ Visited</string>
+    <string name="place_in_trip">🗺️ In my route</string>
+
+    <!-- Favorites -->
+    <string name="favorites_title">My favorites</string>
+    <string name="favorites_empty_emoji">⭐</string>
+    <string name="favorites_empty_title">No favorites yet</string>
+    <string name="favorites_empty_message">Open a place and tap the star to save it here.</string>
+    <string name="action_go_explore">Explore places</string>
+    <plurals name="favorites_count">
+        <item quantity="one">%d saved place</item>
+        <item quantity="other">%d saved places</item>
+    </plurals>
+
+    <!-- My route -->
+    <string name="trip_title">My route</string>
+    <string name="trip_empty_emoji">🗺️</string>
+    <string name="trip_empty_title">Your route is empty</string>
+    <string name="trip_empty_message">Add places from their detail screen with the \"Add to my route\" button and plan your trip around Huila.</string>
+    <string name="trip_stops_label">Stops</string>
+    <string name="trip_farthest_label">Farthest</string>
+    <string name="trip_days_label">Days (approx.)</string>
+    <string name="trip_km_format">%1$d km</string>
+    <string name="trip_progress">%1$d of %2$d stops visited</string>
+    <string name="trip_hint">Press and hold a stop to reorder it · Swipe to remove it</string>
+    <string name="trip_share">Share route</string>
+    <string name="trip_clear">Clear route</string>
+    <string name="trip_share_chooser">Share my route with…</string>
+    <string name="trip_share_text">🌄 %1$s\'s route around Huila\n\n%2$s\n\nPlanned with RutaHuila</string>
+    <string name="trip_clear_title">Clear the whole route?</string>
+    <string name="trip_clear_message">All stops will be removed. Your favorites and ratings are kept.</string>
+
+    <!-- Profile -->
+    <string name="profile_title">My profile</string>
+    <string name="profile_level_progress">%1$d of %2$d places visited</string>
+    <string name="profile_stat_visited">Visited</string>
+    <string name="profile_stat_favorites">Favorites</string>
+    <string name="profile_stat_trip">In my route</string>
+    <string name="profile_stat_rating">Average</string>
+    <string name="profile_rating_format">%1$.1f ★</string>
+    <string name="profile_achievements_title">Achievements (%1$d/%2$d)</string>
+    <string name="profile_settings_title">Settings</string>
+    <string name="profile_dark_mode">🌙  Dark mode</string>
+    <string name="profile_edit_name">Change my name</string>
+    <string name="profile_logout">Log out</string>
+    <string name="profile_reset">Delete all my data</string>
+    <string name="profile_reset_title">Delete all your data?</string>
+    <string name="profile_reset_message">Your favorites, visited places, route, ratings, notes, photos, created places and profile will be deleted. This cannot be undone.</string>
+    <string name="profile_about">RutaHuila v6.0 · SQLite database · Academic project for Mobile Device Programming · USCO\nWeather: Open-Meteo.com · Maps: OpenStreetMap</string>
+
+    <!-- Levels -->
+    <string name="level_1">🎒 Rookie tourist</string>
+    <string name="level_2">🧭 Explorer</string>
+    <string name="level_3">🏅 Expert guide</string>
+    <string name="level_4">🏆 Huila at heart</string>
+
+    <!-- Achievements -->
+    <string name="ach_unlocked">Unlocked</string>
+    <string name="ach_locked">Locked</string>
+    <string name="ach_first_fav_title">First favorite</string>
+    <string name="ach_first_fav_desc">Save your first favorite place</string>
+    <string name="ach_explorer_title">Explorer</string>
+    <string name="ach_explorer_desc">Visit 3 places</string>
+    <string name="ach_critic_title">Travel critic</string>
+    <string name="ach_critic_desc">Rate 5 places</string>
+    <string name="ach_planner_title">Planner</string>
+    <string name="ach_planner_desc">Build a route with 4 stops</string>
+    <string name="ach_archaeologist_title">Archaeologist</string>
+    <string name="ach_archaeologist_desc">Visit San Agustín and Alto de los Ídolos</string>
+    <string name="ach_stars_title">Star hunter</string>
+    <string name="ach_stars_desc">Visit the Tatacoa and its observatory</string>
+    <string name="ach_huilense_title">Huila at heart</string>
+    <string name="ach_huilense_desc">Visit every place</string>
+
+    <!-- Detail -->
+    <string name="detail_about">About this place</string>
+    <string name="detail_tip">💡 A tip for you, %1$s: %2$s</string>
+    <string name="detail_weather_title">Weather now</string>
+    <string name="detail_weather_error">Couldn\'t load the weather. Check your connection.</string>
+    <string name="detail_experience_title">Your experience</string>
+    <string name="detail_visited">I\'ve visited this place</string>
+    <string name="detail_rate_title">How was it?</string>
+    <string name="detail_rating_none">Tap the stars to rate it</string>
+    <string name="detail_note_hint">My personal note (who I went with, what I ate…)</string>
+    <string name="detail_note_save">Save note</string>
+    <string name="detail_note_saved">Note saved 📝</string>
+    <string name="detail_add_favorite">Add to favorites</string>
+    <string name="detail_remove_favorite">Remove from favorites</string>
+    <string name="detail_add_trip">Add to my route</string>
+    <string name="detail_remove_trip">In my route · Remove</string>
+    <string name="detail_open_maps">Directions</string>
+    <string name="detail_share">Share</string>
+    <string-array name="rating_labels">
+        <item>Didn\'t like it 😞</item>
+        <item>So-so 😐</item>
+        <item>Good 🙂</item>
+        <item>Very good 😄</item>
+        <item>A must-see! 🤩</item>
+    </string-array>
+
+    <!-- Weather -->
+    <string name="weather_temperature">%1$d °C</string>
+    <string name="weather_extra">💧 Humidity %1$d%% · 💨 Wind %2$d km/h</string>
+    <string name="weather_clear">Clear</string>
+    <string name="weather_partly_cloudy">Partly cloudy</string>
+    <string name="weather_cloudy">Cloudy</string>
+    <string name="weather_fog">Fog</string>
+    <string name="weather_drizzle">Drizzle</string>
+    <string name="weather_rain">Rain</string>
+    <string name="weather_snow">Snow</string>
+    <string name="weather_showers">Showers</string>
+    <string name="weather_storm">Thunderstorm</string>
+    <string name="weather_unknown">No data</string>
+
+    <!-- Sharing / messages -->
+    <string name="share_chooser">Share place with…</string>
+    <string name="share_text">Check out this place in Huila! %1$s, in %2$s %3$s — I found it with RutaHuila 🌄</string>
+    <string name="snackbar_favorite_added">%1$s was added to your favorites ⭐</string>
+    <string name="snackbar_favorite_removed">%1$s was removed from your favorites</string>
+    <string name="snackbar_trip_added">%1$s was added to your route 🗺️</string>
+    <string name="snackbar_trip_removed">%1$s was removed from your route</string>
+    <string name="snackbar_visited">You marked %1$s as visited! ✅</string>
+    <string name="snackbar_rated">Thanks for rating %1$s!</string>
+    <string name="error_place_not_found">Place not found</string>
+    <string name="error_no_maps">No maps app available</string>
+
+    <!-- Map -->
+    <string name="nav_map">Map</string>
+    <string name="map_title">Map of Huila</string>
+    <string name="map_subtitle">Tap a place to see its information</string>
+    <string name="map_attribution">© OpenStreetMap contributors</string>
+    <string name="map_see_detail">See details ›</string>
+    <string name="map_center">Center the map</string>
+
+    <!-- Own places -->
+    <string name="filter_mine">Mine</string>
+    <string name="action_add_place">Add place</string>
+    <string name="form_title_new">New place</string>
+    <string name="form_title_edit">Edit place</string>
+    <string name="form_intro">Add that spot in Huila you know. It is saved in the app\'s database and shows up in the list and on the map.</string>
+    <string name="form_name_hint">Place name</string>
+    <string name="form_municipality_hint">Town</string>
+    <string name="form_category_title">Category</string>
+    <string name="form_emoji_title">Icon</string>
+    <string name="form_description_hint">Description</string>
+    <string name="form_save">Save place</string>
+    <string name="form_error_name">Enter a name (at least 3 letters)</string>
+    <string name="form_error_municipality">Choose a town from the list</string>
+    <string name="form_error_description">Enter a description (at least 10 letters)</string>
+    <string name="snackbar_place_created">Place added ✅</string>
+    <string name="snackbar_place_updated">Place updated ✅</string>
+    <string name="snackbar_place_deleted">%1$s was deleted</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete_place">Delete place</string>
+    <string name="action_delete_confirm">Delete</string>
+    <string name="delete_place_title">Delete this place?</string>
+    <string name="delete_place_message">\"%1$s\" will be deleted along with its rating, note and photo.</string>
+    <string name="detail_custom_badge">✏️ Created by me</string>
+
+    <!-- Photos -->
+    <string name="detail_photo_title">My photo of this place</string>
+    <string name="detail_photo_empty">You don\'t have a photo of this place yet. Take one or choose it from your gallery.</string>
+    <string name="detail_photo_take">Take photo</string>
+    <string name="detail_photo_pick">Gallery</string>
+    <string name="detail_photo_remove">Remove photo</string>
+    <string name="detail_photo_saved">Photo saved 📷</string>
+    <string name="detail_photo_removed">Photo removed</string>
+    <string name="detail_photo_error">Couldn\'t save the photo</string>
+    <string name="error_no_camera">No camera app available</string>
+    <string name="cd_photo">My photo of this place</string>
+    <string name="ach_photo_title">Photographer</string>
+    <string name="ach_photo_desc">Save a photo in 3 places</string>
+
+    <!-- Forecast and trip date -->
+    <string name="detail_forecast_title">Next days</string>
+    <string name="weather_forecast_day">%1$s\n%2$s\n%3$d° / %4$d°</string>
+    <string name="trip_date_choose">📅 Choose the trip date</string>
+    <string name="trip_date_picker_title">When is your trip?</string>
+    <string name="trip_date_format">📅 %1$s · %2$s</string>
+    <string name="trip_date_days_left">%1$d days to go</string>
+    <string name="trip_date_tomorrow">it\'s tomorrow!</string>
+    <string name="trip_date_today">it\'s today!</string>
+    <string name="trip_date_past">already passed</string>
+
+    <!-- Visit guide -->
+    <string name="detail_guide_title">Plan your visit</string>
+    <string name="guide_duration">⏱️ Duration: %1$s</string>
+    <string name="guide_difficulty">🥾 Difficulty: %1$s</string>
+    <string name="guide_best_time">🗓️ Best time: %1$s</string>
+    <string name="guide_bring">🎒 What to bring: %1$s</string>
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_medium">Moderate</string>
+    <string name="difficulty_hard">Demanding</string>
+
+    <!-- Offline weather -->
+    <string name="weather_offline">📴 Offline · saved on %1$s</string>
+
+    <!-- Location (GPS) -->
+    <string name="sort_near">Closest to me (GPS)</string>
+    <string name="place_location_near">%1$s · %2$d km from you</string>
+    <string name="location_searching">Finding your location…</string>
+    <string name="location_found">Places sorted from your location 📍</string>
+    <string name="location_denied">Without the location permission, places can\'t be sorted by distance</string>
+    <string name="location_not_found">Couldn\'t get your location. Turn on GPS and try again.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_start">Get started</string>
+    <string name="onb_1_title">Discover Huila</string>
+    <string name="onb_1_text">Explore deserts, waterfalls and archaeological parks in a list or on the map, with the weather for each place.</string>
+    <string name="onb_2_title">Plan your route</string>
+    <string name="onb_2_text">Add stops, sort them your way, pick a date and share the plan with your friends.</string>
+    <string name="onb_3_title">Keep your memories</string>
+    <string name="onb_3_text">Rate, write notes, take photos and unlock achievements as you travel around the department.</string>
+
+    <!-- Permissions -->
+    <string name="permissions_title">RutaHuila permissions</string>
+    <string name="permissions_message">To get the most out of the app, we will ask for two permissions:\n\n📍 Location: to show how far you are from each place.\n\n📷 Camera: to take photos of the places you visit.\n\nIf you decline, the app still works and you can change them later in your profile.</string>
+    <string name="permissions_continue">Continue</string>
+    <string name="camera_denied">Without the camera permission you can\'t take a photo. You can pick one from the gallery.</string>
+    <string name="profile_permissions">App permissions</string>
+
+    <!-- General actions -->
+    <string name="action_undo">Undo</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_delete">Delete everything</string>
+    <string name="action_retry">Retry</string>
+
+    <!-- Accessibility -->
+    <string name="cd_back">Back</string>
+    <string name="cd_favorite">Favorite</string>
+</resources>
