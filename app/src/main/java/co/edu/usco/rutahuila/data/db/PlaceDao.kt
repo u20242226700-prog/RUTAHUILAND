@@ -26,7 +26,6 @@ import co.edu.usco.rutahuila.data.db.DatabaseHelper.Companion.COL_TRIP_POSITION
 import co.edu.usco.rutahuila.data.db.DatabaseHelper.Companion.TABLE_PLACES
 import co.edu.usco.rutahuila.data.db.DatabaseHelper.Companion.TABLE_USER_PLACE
 
-/** Lo que el usuario ha hecho con un lugar (una fila de la tabla user_place). */
 data class UserPlaceState(
     val isFavorite: Boolean,
     val isVisited: Boolean,
@@ -36,16 +35,7 @@ data class UserPlaceState(
     val photoPath: String?
 )
 
-/**
- * DAO (Data Access Object): aquí están TODAS las consultas SQL de la app.
- * El resto del código nunca escribe SQL, solo llama a estas funciones.
- *
- * Sobre la tabla "places" hace las 4 operaciones (CRUD):
- * Crear (INSERT), Leer (SELECT), Actualizar (UPDATE) y Borrar (DELETE).
- *
- * Nota: la base de datos es muy pequeña, por eso las consultas se hacen
- * directamente y no necesitan un hilo aparte.
- */
+
 class PlaceDao(private val helper: DatabaseHelper) {
 
     // =====================================================================
@@ -201,19 +191,15 @@ class PlaceDao(private val helper: DatabaseHelper) {
         return ids
     }
 
-    /** SELECT COUNT(*) ... WHERE is_favorite = 1 */
     fun countFavorites(): Int = count("$COL_IS_FAVORITE = 1")
 
-    /** SELECT COUNT(*) ... WHERE is_visited = 1 */
     fun countVisited(): Int = count("$COL_IS_VISITED = 1")
 
-    /** SELECT COUNT(*) ... WHERE rating > 0 */
     fun countRated(): Int = count("$COL_RATING > 0")
 
-    /** SELECT COUNT(*) ... WHERE photo_path IS NOT NULL */
     fun countPhotos(): Int = count("$COL_PHOTO_PATH IS NOT NULL")
 
-    /** SELECT AVG(rating) ... WHERE rating > 0 */
+
     fun averageRating(): Float {
         val cursor = helper.readableDatabase.rawQuery(
             "SELECT AVG($COL_RATING) FROM $TABLE_USER_PLACE WHERE $COL_RATING > 0",
@@ -249,7 +235,6 @@ class PlaceDao(private val helper: DatabaseHelper) {
             if (path == null) putNull(COL_PHOTO_PATH) else put(COL_PHOTO_PATH, path)
         }
 
-    /** UPDATE user_place SET ... WHERE place_id = ? */
     private fun updateUserPlace(placeId: Int, fill: ContentValues.() -> Unit) {
         val values = ContentValues().apply(fill)
         helper.writableDatabase.update(

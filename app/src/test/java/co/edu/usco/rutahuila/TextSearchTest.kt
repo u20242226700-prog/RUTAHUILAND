@@ -8,10 +8,7 @@ import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
-/**
- * Pruebas de la búsqueda de texto: debe ignorar tildes, mayúsculas y espacios.
- * Para correrlas: clic derecho sobre la carpeta "test" > Run 'Tests in...'.
- */
+
 class TextSearchTest {
 
     @Test

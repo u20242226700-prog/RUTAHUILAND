@@ -6,26 +6,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import co.edu.usco.rutahuila.data.PlacesCatalog
 
-/**
- * Crea y actualiza la base de datos SQLite de la app (archivo "rutahuila.db").
- *
- * Tiene 2 tablas relacionadas:
- *
- *   places                          user_place
- *   ──────────────                  ─────────────────────────
- *   id (PK)            1 ─────── 1  place_id (PK, FK -> places.id)
- *   name                            is_favorite   (0 o 1)
- *   municipality                    is_visited    (0 o 1)
- *   category                        rating        (0 a 5)
- *   distance_km                     note          (texto)
- *   emoji                           trip_position (NULL = no está en la ruta)
- *   latitude, longitude             photo_path    (NULL = sin foto)
- *   description, tip
- *   is_custom (1 = creado por el usuario)
- *
- * - "places" guarda la información de cada lugar.
- * - "user_place" guarda lo que el usuario hace con cada lugar.
- */
+
 class DatabaseHelper(context: Context) :
     SQLiteOpenHelper(context.applicationContext, DATABASE_NAME, null, DATABASE_VERSION) {
 
@@ -47,13 +28,12 @@ class DatabaseHelper(context: Context) :
         }
     }
 
-    /** Activa las llaves foráneas (en SQLite vienen apagadas por defecto). */
+
     override fun onConfigure(db: SQLiteDatabase) {
         super.onConfigure(db)
         db.setForeignKeyConstraintsEnabled(true)
     }
 
-    /** Carga los lugares del catálogo en la base de datos (datos semilla). */
     private fun insertInitialPlaces(db: SQLiteDatabase) {
         PlacesCatalog.places.forEach { place ->
             val placeValues = ContentValues().apply {

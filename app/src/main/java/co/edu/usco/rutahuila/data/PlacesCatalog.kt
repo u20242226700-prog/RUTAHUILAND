@@ -1,10 +1,6 @@
 package co.edu.usco.rutahuila.data
 
-/**
- * Catálogo de lugares del Huila. Son los DATOS SEMILLA: se insertan en la
- * base de datos SQLite la primera vez que se abre la app (ver DatabaseHelper).
- * Las coordenadas son aproximadas y se usan para consultar el clima.
- */
+
 object PlacesCatalog {
 
     val places: List<Place> = listOf(

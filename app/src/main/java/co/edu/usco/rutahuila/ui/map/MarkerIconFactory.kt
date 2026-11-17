@@ -8,10 +8,7 @@ import android.graphics.Paint
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 
-/**
- * Dibuja el ícono de cada marcador del mapa: un círculo blanco con el borde
- * del color de la categoría y el emoji del lugar en el centro.
- */
+
 object MarkerIconFactory {
 
     private const val SIZE_DP = 44

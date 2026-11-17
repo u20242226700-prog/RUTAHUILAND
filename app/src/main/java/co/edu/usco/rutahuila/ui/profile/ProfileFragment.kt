@@ -19,10 +19,7 @@ import co.edu.usco.rutahuila.databinding.FragmentProfileBinding
 import co.edu.usco.rutahuila.ui.welcome.WelcomeActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
-/**
- * PESTAÑA PERFIL: estadísticas, nivel de explorador, logros y ajustes
- * (modo oscuro, editar nombre, cerrar sesión y borrar datos).
- */
+
 class ProfileFragment : Fragment() {
 
     private var _binding: FragmentProfileBinding? = null

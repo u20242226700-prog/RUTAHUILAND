@@ -9,11 +9,7 @@ import co.edu.usco.rutahuila.data.PlaceRepository
 import co.edu.usco.rutahuila.databinding.ActivityOnboardingBinding
 import co.edu.usco.rutahuila.ui.welcome.WelcomeActivity
 
-/**
- * TUTORIAL INICIAL.
- * Tres páginas deslizables que explican la app. Solo se muestra la primera
- * vez: al terminar se guarda una marca en SharedPreferences.
- */
+
 class OnboardingActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityOnboardingBinding

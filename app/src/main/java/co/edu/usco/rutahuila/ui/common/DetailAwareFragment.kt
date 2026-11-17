@@ -9,14 +9,6 @@ import co.edu.usco.rutahuila.ui.detail.DetailActivity
 import co.edu.usco.rutahuila.ui.main.MainActivity
 import com.google.android.material.snackbar.Snackbar
 
-/**
- * Clase base para las pestañas que abren el detalle de un lugar.
- *
- * - Abre DetailActivity y RECIBE el resultado cuando el usuario vuelve.
- * - Refresca la pestaña cada vez que se vuelve visible.
- *
- * Así no se repite el mismo código en Explorar, Favoritos y Mi ruta (herencia).
- */
 abstract class DetailAwareFragment : Fragment() {
 
     private val detailLauncher = registerForActivityResult(

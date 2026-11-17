@@ -12,10 +12,7 @@ import co.edu.usco.rutahuila.data.PlaceUi
 import co.edu.usco.rutahuila.databinding.ItemTripStopBinding
 import co.edu.usco.rutahuila.ui.common.PlaceFormatter
 
-/**
- * Adaptador de las paradas de la ruta.
- * Usa una lista mutable porque el usuario puede ARRASTRAR para reordenar.
- */
+
 class TripAdapter(
     private val onPlaceClick: (Place) -> Unit
 ) : RecyclerView.Adapter<TripAdapter.StopViewHolder>() {
@@ -31,7 +28,6 @@ class TripAdapter(
 
     fun itemAt(position: Int): PlaceUi = items[position]
 
-    /** Mueve visualmente una parada mientras el usuario la arrastra. */
     fun moveItem(from: Int, to: Int) {
         val item = items.removeAt(from)
         items.add(to, item)

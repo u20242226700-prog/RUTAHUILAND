@@ -5,10 +5,6 @@ import co.edu.usco.rutahuila.data.weather.WeatherService
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
-/**
- * Pruebas del clima. No usan internet: se le entrega a la app un JSON de
- * ejemplo con el mismo formato que devuelve la API de Open-Meteo.
- */
 class WeatherTest {
 
     private val exampleJson = """

@@ -12,7 +12,6 @@ import co.edu.usco.rutahuila.ui.common.DetailAwareFragment
 import co.edu.usco.rutahuila.ui.common.PlaceAdapter
 import co.edu.usco.rutahuila.ui.main.MainActivity
 
-/** PESTAÑA FAVORITOS: los lugares que el usuario marcó con estrella. */
 class FavoritesFragment : DetailAwareFragment() {
 
     private var _binding: FragmentFavoritesBinding? = null

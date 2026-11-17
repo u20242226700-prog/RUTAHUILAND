@@ -11,11 +11,7 @@ import androidx.core.location.LocationManagerCompat
 import co.edu.usco.rutahuila.data.Place
 import kotlin.math.roundToInt
 
-/**
- * Ubicación del usuario (GPS).
- * Guarda en memoria la última ubicación obtenida y calcula la distancia
- * en línea recta desde ahí hasta cualquier lugar.
- */
+
 object LocationHelper {
 
     /** Permisos que se le piden al usuario (ubicación precisa o aproximada). */

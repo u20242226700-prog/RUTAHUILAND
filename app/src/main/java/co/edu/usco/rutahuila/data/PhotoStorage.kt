@@ -12,13 +12,7 @@ import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.IOException
 
-/**
- * Guarda las fotos del usuario en el almacenamiento INTERNO de la app
- * (carpeta files/photos). En la base de datos solo se guarda la RUTA del archivo.
- *
- * Antes de guardar, la imagen se reduce y se endereza, para que no ocupe
- * mucha memoria ni salga girada.
- */
+
 object PhotoStorage {
 
     private const val PHOTOS_DIR = "photos"
@@ -29,21 +23,16 @@ object PhotoStorage {
     private const val MAX_SIZE = 1280
     private const val JPEG_QUALITY = 85
 
-    /**
-     * Dirección (Uri) del archivo temporal donde la app de cámara guardará la foto.
-     * Se comparte de forma segura con FileProvider.
-     */
+
     fun cameraUri(context: Context): Uri = FileProvider.getUriForFile(
         context, context.packageName + AUTHORITY_SUFFIX, cameraFile(context)
     )
 
-    /** Procesa la foto recién tomada. Devuelve la ruta final o null si falló. */
     suspend fun saveFromCamera(context: Context, placeId: Int): String? =
         withContext(Dispatchers.IO) {
             process(context, cameraFile(context), placeId)
         }
 
-    /** Copia la imagen elegida en la galería y la procesa. */
     suspend fun saveFromGallery(context: Context, uri: Uri, placeId: Int): String? =
         withContext(Dispatchers.IO) {
             val temp = File(tempDir(context), GALLERY_FILE)
@@ -93,7 +82,6 @@ object PhotoStorage {
         }
     }
 
-    /** Lee la imagen reducida (máximo 1280 px) y con la orientación correcta. */
     private fun decodeScaled(file: File): Bitmap? {
         // 1. Se leen solo las medidas, sin cargar la imagen en memoria
         val bounds = BitmapFactory.Options().apply { inJustDecodeBounds = true }
@@ -116,7 +104,6 @@ object PhotoStorage {
         return Bitmap.createBitmap(decoded, 0, 0, decoded.width, decoded.height, matrix, true)
     }
 
-    /** Las cámaras guardan la orientación en los datos EXIF de la foto. */
     private fun rotationOf(file: File): Float = try {
         val orientation = ExifInterface(file.absolutePath).getAttributeInt(
             ExifInterface.TAG_ORIENTATION, ExifInterface.ORIENTATION_NORMAL

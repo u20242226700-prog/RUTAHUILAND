@@ -28,10 +28,7 @@ enum class SortOrder {
     NEAR_ME
 }
 
-/**
- * Modelo de un lugar turístico del Huila (una fila de la tabla "places").
- * isCustom = true cuando lo creó el usuario desde la app.
- */
+
 data class Place(
     val id: Int,
     val name: String,

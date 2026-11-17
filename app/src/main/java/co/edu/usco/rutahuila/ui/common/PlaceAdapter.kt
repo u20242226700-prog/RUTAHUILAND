@@ -13,10 +13,7 @@ import co.edu.usco.rutahuila.data.Place
 import co.edu.usco.rutahuila.data.PlaceUi
 import co.edu.usco.rutahuila.databinding.ItemPlaceBinding
 
-/**
- * Adaptador de tarjetas de lugares. Se REUTILIZA en Explorar y en Favoritos.
- * Usa ListAdapter + DiffUtil para actualizar solo las tarjetas que cambian.
- */
+
 class PlaceAdapter(
     private val onPlaceClick: (Place) -> Unit
 ) : ListAdapter<PlaceUi, PlaceAdapter.PlaceViewHolder>(DIFF) {

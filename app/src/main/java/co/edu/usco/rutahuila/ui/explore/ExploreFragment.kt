@@ -22,13 +22,7 @@ import co.edu.usco.rutahuila.ui.form.PlaceFormActivity
 import co.edu.usco.rutahuila.util.IntentKeys
 import co.edu.usco.rutahuila.util.LocationHelper
 
-/**
- * PESTAÑA EXPLORAR.
- * Lista de lugares con búsqueda, filtros por categoría, orden (incluye
- * "más cerca de mí" con GPS) y "lugar sorpresa".
- * Desde aquí también se abre el formulario para agregar un lugar propio.
- * Recibe el filtro inicial (elegido en la bienvenida) como argumento.
- */
+
 class ExploreFragment : DetailAwareFragment() {
 
     private var _binding: FragmentExploreBinding? = null

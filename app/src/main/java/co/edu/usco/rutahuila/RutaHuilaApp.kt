@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import co.edu.usco.rutahuila.data.PlaceRepository
 import co.edu.usco.rutahuila.data.weather.WeatherRepository
 
-/**
- * Clase Application: se ejecuta una sola vez al abrir la app.
- * Inicializa el repositorio compartido y aplica el modo oscuro guardado.
- */
+
 class RutaHuilaApp : Application() {
     override fun onCreate() {
         super.onCreate()

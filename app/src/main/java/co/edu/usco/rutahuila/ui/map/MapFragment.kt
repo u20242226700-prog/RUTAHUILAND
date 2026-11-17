@@ -24,12 +24,7 @@ import org.osmdroid.views.overlay.Polyline
 import org.osmdroid.views.overlay.TilesOverlay
 import org.osmdroid.config.Configuration as OsmConfiguration
 
-/**
- * PESTAÑA MAPA.
- * Muestra todos los lugares sobre un mapa de OpenStreetMap (librería osmdroid,
- * gratuita y sin llave). Cada lugar es un marcador con su emoji, y la ruta
- * del usuario se dibuja como una línea que une sus paradas en orden.
- */
+
 class MapFragment : DetailAwareFragment() {
 
     private var _binding: FragmentMapBinding? = null

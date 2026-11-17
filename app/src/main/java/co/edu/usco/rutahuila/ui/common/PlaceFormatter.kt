@@ -11,10 +11,6 @@ import co.edu.usco.rutahuila.util.LocationHelper
 /** Textos que se repiten en varias pantallas, centralizados en un solo lugar. */
 object PlaceFormatter {
 
-    /**
-     * Texto de ubicación de un lugar. Si ya se obtuvo la ubicación del usuario
-     * (GPS), muestra la distancia real desde donde está; si no, la distancia desde Neiva.
-     */
     fun location(context: Context, place: Place): String {
         val kmFromUser = LocationHelper.distanceKm(place)
         return when {
@@ -30,10 +26,7 @@ object PlaceFormatter {
     fun rating(context: Context, rating: Float): String =
         context.getString(R.string.place_rating_format, rating)
 
-    /**
-     * Arma el mensaje del Snackbar a partir del resultado que devuelve la
-     * pantalla de detalle. Devuelve null si el usuario no cambió nada.
-     */
+
     fun detailResultMessage(context: Context, data: Intent?): String? {
         if (data == null) return null
 

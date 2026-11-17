@@ -15,11 +15,7 @@ import co.edu.usco.rutahuila.databinding.ActivityPlaceFormBinding
 import co.edu.usco.rutahuila.util.IntentKeys
 import com.google.android.material.chip.Chip
 
-/**
- * FORMULARIO DE LUGAR PROPIO.
- * La misma pantalla sirve para CREAR (sin parámetros) y para EDITAR
- * (cuando recibe el ID de un lugar). Guarda en la base de datos.
- */
+
 class PlaceFormActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPlaceFormBinding

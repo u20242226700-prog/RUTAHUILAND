@@ -1,6 +1,5 @@
 package co.edu.usco.rutahuila.util
 
-/** Claves de los datos que viajan entre pantallas (Intents y argumentos de Fragments). */
 object IntentKeys {
     const val USER_NAME = "extra_user_name"
     const val FILTER = "extra_filter"

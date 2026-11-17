@@ -9,22 +9,7 @@ import co.edu.usco.rutahuila.util.LocationHelper
 import co.edu.usco.rutahuila.util.normalized
 import java.io.File
 
-/**
- * Fuente única de datos de la app (patrón Repository + Singleton).
- * Las pantallas SOLO hablan con este objeto; no saben de dónde salen los datos.
- *
- * Usa tres tipos de almacenamiento, cada uno para lo que sirve mejor:
- *
- * 1. BASE DE DATOS SQLite (por medio de [PlaceDao]):
- *    los lugares y todo lo que el usuario hace con ellos
- *    (favoritos, visitados, ruta, calificaciones, notas y lugares propios).
- *
- * 2. ARCHIVOS internos (por medio de [PhotoStorage]):
- *    las fotos. En la base de datos solo se guarda la ruta del archivo.
- *
- * 3. SharedPreferences (clave-valor):
- *    datos sueltos y sencillos (nombre, avatar, modo oscuro y fecha del viaje).
- */
+
 object PlaceRepository {
 
     private const val PREFS_NAME = "ruta_huila_prefs"

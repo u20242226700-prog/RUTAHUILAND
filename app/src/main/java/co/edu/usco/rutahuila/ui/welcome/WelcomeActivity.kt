@@ -16,11 +16,7 @@ import co.edu.usco.rutahuila.ui.onboarding.OnboardingActivity
 import co.edu.usco.rutahuila.util.IntentKeys
 import com.google.android.material.chip.Chip
 
-/**
- * PANTALLA DE INICIO (con splash).
- * El usuario escribe su nombre, elige un avatar y el tipo de plan que le gusta.
- * El nombre y el filtro se envían a MainActivity por medio del Intent.
- */
+
 class WelcomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityWelcomeBinding
@@ -55,7 +51,6 @@ class WelcomeActivity : AppCompatActivity() {
         binding.btnStart.setOnClickListener { startExploring() }
     }
 
-    /** Si ya había usado la app, recordamos su nombre y avatar. */
     private fun restoreSavedUser() {
         val savedName = PlaceRepository.userName
         if (savedName.isNotBlank()) {

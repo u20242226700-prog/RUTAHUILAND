@@ -36,19 +36,7 @@ import java.util.Date
 import kotlin.math.ceil
 import kotlin.math.roundToInt
 
-/**
- * DETALLE DEL LUGAR.
- * - Recibe el ID del lugar por Intent.
- * - Consulta el clima en una API REST (Open-Meteo) con corrutinas. Si no hay
- *   internet, muestra la última copia guardada.
- * - Muestra la ficha para planear la visita (duración, dificultad, qué llevar).
- * - Permite: favorito, "lo visité", calificar, escribir una nota, agregar a la
- *   ruta y guardar una FOTO (con la cámara o desde la galería).
- * - Si el lugar lo creó el usuario, se puede EDITAR y ELIMINAR.
- * - Devuelve un resultado a la pantalla anterior con lo que cambió.
- * - Pide el permiso de CÁMARA antes de tomar una foto.
- * - Abre otras apps: cámara, galería, Google Maps y Compartir.
- */
+
 class DetailActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityDetailBinding

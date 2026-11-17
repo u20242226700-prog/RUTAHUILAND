@@ -18,10 +18,7 @@ data class PlaceGuide(
     val whatToBring: String
 )
 
-/**
- * Ficha de visita de cada lugar del catálogo, buscada por el id del lugar.
- * Son recomendaciones generales. Los lugares creados por el usuario no tienen ficha.
- */
+
 object PlaceGuides {
 
     private val guides: Map<Int, PlaceGuide> = mapOf(

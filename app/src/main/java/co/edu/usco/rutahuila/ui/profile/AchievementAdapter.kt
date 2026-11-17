@@ -9,7 +9,6 @@ import co.edu.usco.rutahuila.R
 import co.edu.usco.rutahuila.data.Achievement
 import co.edu.usco.rutahuila.databinding.ItemAchievementBinding
 
-/** Muestra los logros en una cuadrícula. Los bloqueados se ven en gris. */
 class AchievementAdapter : ListAdapter<Achievement, AchievementAdapter.AchievementViewHolder>(DIFF) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AchievementViewHolder {

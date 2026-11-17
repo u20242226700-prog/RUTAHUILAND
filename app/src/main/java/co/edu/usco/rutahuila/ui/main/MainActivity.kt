@@ -19,23 +19,12 @@ import co.edu.usco.rutahuila.util.IntentKeys
 import co.edu.usco.rutahuila.util.LocationHelper
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
-/**
- * Contenedor principal con barra de navegación inferior (BottomNavigationView).
- * Cada pestaña es un Fragment: Explorar, Mapa, Favoritos, Mi ruta y Perfil.
- *
- * Los fragments se ocultan/muestran (show/hide) en vez de recrearse,
- * así cada pestaña conserva su estado (búsqueda, scroll, posición del mapa, etc.).
- *
- * La primera vez que se abre, le pide al usuario los PERMISOS de ubicación y cámara.
- */
+
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    /**
-     * Muestra los cuadros del sistema para aceptar o negar cada permiso.
-     * Al terminar, si hay permiso de ubicación, se busca dónde está el usuario.
-     */
+
     private val permissionLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
     ) {

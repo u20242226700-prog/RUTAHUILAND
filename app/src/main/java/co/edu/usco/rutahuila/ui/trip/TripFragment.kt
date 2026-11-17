@@ -24,13 +24,7 @@ import java.time.format.FormatStyle
 import java.time.temporal.ChronoUnit
 import kotlin.math.ceil
 
-/**
- * PESTAÑA MI RUTA: planificador de viaje.
- * - Mantén presionada una parada y arrástrala para cambiar el orden.
- * - Desliza una parada hacia un lado para quitarla (con opción de deshacer).
- * - Elige la fecha del viaje y mira cuántos días faltan.
- * - Comparte el itinerario o bórralo completo.
- */
+
 class TripFragment : DetailAwareFragment() {
 
     private var _binding: FragmentTripBinding? = null
@@ -79,7 +73,6 @@ class TripFragment : DetailAwareFragment() {
         ItemTouchHelper(touchCallback).attachToRecyclerView(binding.rvTrip)
     }
 
-    /** Controla el arrastre (reordenar) y el deslizamiento (quitar). */
     private val touchCallback = object : ItemTouchHelper.SimpleCallback(
         ItemTouchHelper.UP or ItemTouchHelper.DOWN,
         ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
